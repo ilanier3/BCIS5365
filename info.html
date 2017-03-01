@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<title>Issac's Computer Repair</title>
+<meta name="description" content="Issac's Computer Repair">
+<meta name="keywords" content="computers,repair, windows, mac, machines, OS, Lenovo, Dell, HP">
+<met name="author" content="Issac Wilcher">
+<link rel="StyleSheet" href="thestyles.css">
+<script>
+
+function countdown()
+{
+	var todayIs=new Date()
+	var ourEvent=new Date("December 25, 2015")
+	var daysSubtracted=ourEvent.getTime()-todayIs.getTime();
+	var daysUntil=Math.ceil(daysSubtracted/(1000*60*60*24));
+	
+	if(todayIs<ourEvent)
+	{
+		document.write("Only " + daysUntil + " days until Christmas!");
+	}
+	else
+	{
+		
+	}
+}
+
+function guessGame()
+{
+	guess = document.getElementById("guess").value;
+
+	if(guess==answer)
+		{
+		 alert("Superb! You guessed the correct number!");
+		}
+	else
+		{
+		 alert("Incorrect, try again. :-(");
+		}
+}
+
+var answer = Math.floor(Math.random()*10);
+
+
+</script>
+</head>
+<body>
+	<h1>Issac's Computer Repair</h1>
+	<hr>
+	<div id="background">
+		<div id="wrapper">
+			<div id="topcolumn">
+			<br>
+			<hr>
+			<nav>
+			<table align="center" cellpadding="15">
+			<tr>
+			<td><a href="index.html">Home</a></td>
+			<td><a href="services.html">Services</a></td>
+			<td><a href="links.html">Links</a></td>
+			<td><a href="quotes.html">Request Quote</a></td>
+			</tr>
+			</table>
+			<table align="center" cellpadding="15">
+			<tr>
+			<td><a href="aboutme.html">About Me</a></td>
+			<td><a href="contactus.html">Contact Us</a></td>
+			<td>Interesting Info</td>
+			</tr>
+			</table>
+			</nav>
+			<hr>
+			</div>
+
+			<div id="middlecolumn">
+				<div id="content">
+
+				<script>
+				var uName=prompt("Please, enter your name.","");
+				var today = new Date ()
+				var hrs = today.getHours();
+				document.writeln("<p>");
+				document.writeln("<p>");
+				if (hrs <= 12)
+        				document.write("Good Morning "+uName+'!');
+				else if (hrs <= 18)
+        				document.write("Good Afternoon "+uName+'!');
+				else
+     					document.write("Good Evening "+uName+'!'); document.writeln("<br />");
+				</script>
+				<br>
+				<script>
+				countdown();
+				</script>
+				<br>
+				<h3>Try your luck!</h3>
+				<p>I'm thinking of a number between 1 and 10. <label for="guess">Take a guess:</label>
+				<input type="text" id="guess">
+				<button onclick="guessGame()">Submit</button>
+
+				<p>Have you ever wondered what your IP address is or how fast your connect is? Well, here is where you can find that out!
+				<br>
+				<h3>IP Information</h3>
+				<script type="text/javascript" src="http://100widgets.com/js_data.php?id=69"></script>
+				<br>
+				<h3>Speed Test</h3>
+				<script type="text/javascript" src="http://100widgets.com/js_data.php?id=201"></script>
+				
+
+				</div>
+			</div>
+			
+			<div id="footer">
+			<br><br><br><br>
+			</div>
+		</div>
+
+		
+	</div>
+
+</div>
+<div id="footer2">
+		<br>
+		<h5>&#9900Issac Wilcher
+
+		&copy;Copyright info 1995&#9900</h5>
+		<br>
+</div>
+
+</body>
+</html>

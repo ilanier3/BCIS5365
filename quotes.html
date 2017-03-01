@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title>Issac's Computer Repair</title>
+<meta name="description" content="Issac's Computer Repair">
+<meta name="keywords" content="computers,repair, windows, mac, machines, OS, Lenovo, Dell, HP">
+<met name="author" content="Issac Wilcher">
+<link rel="StyleSheet" href="thestyles.css">
+<script>
+function checkLetters(name)
+{
+	var letters = /^[A-Za-z]+$/;
+	if(name.value.match(letters))
+		{
+		 return true;
+		}
+	else
+		{
+		 alert("Please only enter letters into the name fields.");
+		 return false;
+		}
+}
+</script>
+</head>
+<body>
+	<h1>Issac's Computer Repair</h1>
+	<hr>
+	<div id="background">
+		<div id="wrapper">
+			<div id="topcolumn">
+			<br>
+			<hr>
+			<nav>
+			<table align="center" cellpadding="15">
+			<tr>
+			<td><a href="index.html">Home</a></td>
+			<td><a href="services.html">Services</a></td>
+			<td><a href="links.html">Links</a></td>
+			<td>Request Quote</td>
+</tr>
+			</table>
+			<table align="center" cellpadding="15">
+			<tr>
+			<td><a href="aboutme.html">About Me</a></td>
+			<td><a href="contactus.html">Contact Us</a></td>
+			<td><a href="info.html">Interesting Info</a></td>
+			</tr>
+			</table>
+			</nav>
+			<hr>
+			</div>
+
+			<div id="middlecolumn">
+				<div id="content">
+				<h2>Request Quote</h2> 
+		<form name="quote" action="#">		
+
+		<fieldset>
+		<legend>Quote Information</legend>
+		<label>Services interested in:</label>
+		<input type="checkbox" name="services" value="repair">Computer Repair
+		<input type="checkbox" name="services" value="recovery">Data Recovery
+		<input type="checkbox" name="services" value="training">Computer Training
+		<input type="checkbox" name="services" value="sales">Computer Sales
+		<input type="checkbox" name="services" value="photo">Photo Editing
+		(Check all that apply)
+		<br><br>
+		<label>Operating System:</label>
+		<select name="os">
+		<option></option>
+		<option value="windows">Windows</option>
+		<option value="mac">Macintosh</option>
+		<option value="linux">Linux</option>
+		<option value="chrome">Chrome</option>
+		<option value="other">Other</option>
+		</select>
+		<br><br>
+		<label>Manufacturer:</label>
+		<input type="text" name="manufacturer">(If available)</textarea>
+		<br><br>
+		<label>Model:</label>
+		<input type="text" name="model">(If available)</textarea>
+		<br><br>
+		<label>Interested in in-home servicing?</label>
+		<input type="radio" name="servicetype" value="yes">Yes
+		<input type="radio" name="servicetype" value="no">No
+		<br><br>
+		<label>Additional Information/Comments:</label>
+		<br>
+		<textarea name="Comments" cols="60" rows="4"></textarea>
+		<br><br>
+		</fieldset>
+		<br>
+		<br>
+
+		<fieldset>
+		<legend>Your info</legend>
+		<label>First name: <input type="text" name="fname" required>*</label>
+		<br>
+		Last name: <input type="text" name="lname" required>*</label>
+		<br>
+		<label>E-Mail: <input type="email" name="Email" required>*</label>
+		<br>
+		<label>Telephone: <input type="tel" name="phone"></label>
+		<br>
+			<fieldset class="fieldset-auto-width">
+			<legend>Preferred method of contact</legend>
+			<input type="radio" name="contactby" value="email" checked>By E-Mail
+			<br>
+			<input type="radio" name="contactby" value="tel">By Phone
+			</fieldset>
+		</fieldset>
+				
+
+		<br>
+		*required field
+		<br><br>		
+		<input type="reset" value="Clear form">
+		<input type="submit" value="Submit" onClick="checkLetters(document.quote.fname)" />
+
+
+	
+		</form>
+				</div>
+			</div>
+			
+			<div id="footer">
+			<br><br><br><br>
+			</div>
+		</div>
+
+		
+	</div>
+
+</div>
+<div id="footer2">
+		<br>
+		<h5>&#9900Issac Wilcher
+
+		&copy;Copyright info 1995&#9900</h5>
+		<br>
+</div>
+
+</body>
+</html>
